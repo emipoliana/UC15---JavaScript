@@ -1,51 +1,64 @@
-let nome = prompt("Digite seu nome completo:");
-let cargo = prompt("Digite seu cargo ou função:");
-let empresa = prompt("Digite sua empresa ou escola:");
-let email = prompt("Digite seu e-mail:");
 
-nome = nome.toUpperCase();
+// Questão 1 - Operações matemáticas
 
-let produto = prompt("Digite o nome do produto:");
-let preco = parseFloat(prompt("Digite o preço do produto:"));
-let percentual = parseFloat(prompt("Digite o percentual de desconto:"));
+let numero1 = 10;
+let numero2 = 5;
 
-let valorDesconto = preco * percentual / 100;
-let precoFinal = preco - valorDesconto;
+console.log("Soma:", numero1 + numero2);
+console.log("Subtração:", numero1 - numero2);
+console.log("Multiplicação:", numero1 * numero2);
+console.log("Divisão:", numero1 / numero2);
 
-console.log("----------------------------------");
-console.log("CALCULADORA DE DESCONTO");
-console.log("Produto: " + produto);
-console.log("Preço Original: R$ " + preco.toFixed(2));
-console.log("Valor do Desconto: R$ " + valorDesconto.toFixed(2));
-console.log("Preço Final: R$ " + precoFinal.toFixed(2));
+// Questão 2 - Dobro e triplo
 
-alert(
-"Produto: " + produto +
-"\nPreço Original: R$ " + preco.toFixed(2) +
-"\nDesconto: R$ " + valorDesconto.toFixed(2) +
-"\nPreço Final: R$ " + precoFinal.toFixed(2)
-);
+let numero = 8;
 
-let senha = prompt("Digite uma senha:");
+console.log("Dobro:", numero * 2);
+console.log("Triplo:", numero * 3);
 
-let tamanho = senha.length;
+// Questão 3 - Nome e idade do usuário
 
-let temMaiuscula = /[A-Z]/.test(senha);
-let temMinuscula = /[a-z]/.test(senha);
+let nome = prompt("Digite seu nome:");
+let idade = prompt("Digite sua idade:");
 
-let classificacao;
+console.log(`Olá, ${nome}! Seja bem-vindo! Você tem ${idade} anos.`);
 
-if (tamanho >= 8 && temMaiuscula && temMinuscula) {
-    classificacao = "Forte";
-} else if (tamanho >= 6 && (temMaiuscula || temMinuscula)) {
-    classificacao = "Média";
+// Questão 4 - Média de três notas
+
+let nota1 = Number(prompt("Digite a primeira nota:"));
+let nota2 = Number(prompt("Digite a segunda nota:"));
+let nota3 = Number(prompt("Digite a terceira nota:"));
+
+let media = (nota1 + nota2 + nota3) / 3;
+
+console.log("Média:", media);
+
+// Questão 5 - Sistema de login
+
+let usuarioCorreto = "admin";
+let senhaCorreta = "1234";
+
+let usuario = prompt("Digite o usuário:");
+let senha = prompt("Digite a senha:");
+
+if (usuario !== usuarioCorreto) {
+    console.log("Usuário incorreto.");
+} else if (senha !== senhaCorreta) {
+    console.log("Senha incorreta.");
 } else {
-    classificacao = "Fraca";
+    console.log("Login realizado com sucesso!");
 }
 
-console.log("----------------------------------");
-console.log("VERIFICADOR DE SENHA");
-console.log("Quantidade de caracteres: " + tamanho);
-console.log("Classificação: " + classificacao);
+// Questão 6 - Número maior
 
-alert("A força da senha é: " + classificacao);
+let primeiroNumero = Number(prompt("Digite o primeiro número:"));
+let segundoNumero = Number(prompt("Digite o segundo número:"));
+
+if (primeiroNumero > segundoNumero) {
+    console.log("O maior número é", primeiroNumero);
+} else if (segundoNumero > primeiroNumero) {
+    console.log("O maior número é", segundoNumero);
+} else {
+    console.log("Os dois números são iguais.");
+}
+

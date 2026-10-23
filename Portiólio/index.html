@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="cabecalho" id="topo">
+    <a class="logo" href="#inicio">meu<span>portfólio.</span></a>
+
+    <button id="menu-toggle" aria-label="Abrir menu"
+      aria-expanded="false" aria-controls="menu">
+      ☰
+    </button>
+
+    <nav id="menu" aria-label="Menu principal">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre mim</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+      <button id="tema" aria-label="Ativar modo escuro">☾</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="inicio" id="inicio">
+      <div>
+        <p class="etiqueta">PORTFÓLIO • ESTUDANTE DE TECNOLOGIA</p>
+        <h1><span id="saudacao">Olá!</span><br>
+          Eu sou <span class="destaque"> Emili </span>.
+        </h1>
+        <p>Estou aprendendo a transformar ideias em experiências
+          digitais usando criatividade e programação.</p>
+        <a class="botao" href="#projetos">Conheça meus projetos ↗</a>
+      </div>
+
+      <div class="foto">
+        <div class="avatar" role="img" aria-label="Espaço para minha foto">
+          ♡
+        </div>
+        <p>✿ criando coisas legais</p>
+      </div>
+    </section>
+
+    <div class="faixa">
+      CRIATIVIDADE ✳ HTML ✳ CSS ✳ JAVASCRIPT ✳ APRENDIZADO
+    </div>
+
+    <section class="secao sobre" id="sobre">
+      <p class="etiqueta">01 / SOBRE MIM</p>
+      <h2>Prazer, <span class="destaque">Emili!</span></h2>
+      <p>Sou estudante de TI do Senac RN e estou descobrindo como a tecnologia
+        pode dar vida a boas ideias.</p>
+      <p>Gosto de aprender na prática, testar possibilidades e
+        criar páginas bonitas, acessíveis e fáceis de usar.
+        Meu objetivo é desenvolver minhas habilidades de criar coisas novas, 
+        programação e de que maneira criar experiências digitais cada vez melhores.</p>
+    </section>
+
+    <section class="secao habilidades" id="habilidades">
+      <p class="etiqueta">02 / MINHA JORNADA</p>
+      <h2>O que estou <span class="destaque">aprendendo</span></h2>
+
+      <div class="grade">
+        <article class="cartao1">
+          <span class="icone">&lt;/&gt;</span>
+          <h3>HTML5</h3>
+          <p>Estrutura e semântica de páginas web.</p>
+        </article>
+
+        <article class="cartao2">
+          <span class="icone">✿</span>
+          <h3>CSS3</h3>
+          <p>Estilização, layouts e responsividade.</p>
+        </article>
+
+        <article class="cartao3">
+          <span class="icone">{ }</span>
+          <h3>JavaScript</h3>
+          <p>Interatividade, funções e eventos.</p>
+        </article>
+
+        <article class="cartao4">
+          <span class="icone">♡</span>
+          <h3>Figma</h3>
+          <p>Organização visual e acessibilidade.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao projetos" id="projetos">
+      <p class="etiqueta">03 / MEUS TRABALHOS</p>
+      <h2>Pequenos projetos,<br>
+        <span class="destaque">grandes ideias.</span>
+      </h2>
+
+      <div class="grade">
+        <article class="cartao projeto">
+          <div class="ilustracao rosa"> &lt;html&gt; </div>
+          <h3>Projeto 01</h3>
+          <p>Uma página de apresentação criada com HTML.</p>
+          <span class="tag">HTML</span>
+        </article>
+
+        <article class="cartao projeto">
+          <div class="ilustracao lilas">CSS ✿</div>
+          <h3>Projeto 02</h3>
+          <p>Um site estilizado e adaptável para celulares.</p>
+          <span class="tag">CSS</span>
+        </article>
+
+        <article class="cartao projeto">
+          <div class="ilustracao amarelo">{ JS }</div>
+          <h3>Planejadorde tarefas</h3>
+          <p>Uma aplicação interativa com JavaScript.</p>
+          <span class="tag">JavaScript</span>
+        </article>
+      </div>
+      <p class="aviso">Substitua os exemplos pelos seus projetos reais do curso.</p>
+    </section>
+
+    <section class="secao contato" id="contato">
+      <div>
+        <p class="etiqueta">04 / VAMOS CONVERSAR?</p>
+        <h2>Uma ideia começa<br>com um <span class="destaque">olá.</span></h2>
+        <p>Envie uma mensagem preenchendo o formulário ao lado.</p>
+      </div>
+
+      <form id="formulario">
+        <label for="nome">Seu nome</label>
+        <input id="nome" name="nome" type="text"
+          placeholder="Como você se chama?" required minlength="2">
+
+        <label for="email">Seu e-mail</label>
+        <input id="email" name="email" type="email"
+          placeholder="voce@exemplo.com" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="4"
+          placeholder="Escreva sua mensagem..." required minlength="10"></textarea>
+
+        <label class="consentimento">
+          <input type="checkbox" id="consentimento" required>
+          Concordo em usar meus dados apenas para responder à mensagem.
+        </label>
+
+        <p class="nota">Formulário demonstrativo: não envia nem armazena dados.</p>
+        <button class="botao" type="submit">Validar mensagem ↗</button>
+        <p id="feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#topo">meu<span>portfólio.</span></a>
+    <p>Feito por Emili Poliana · © <span id="ano"></span></p>
+    <a href="#topo">Voltar ao topo ↑</a>
+  </footer>
+</body>
+</html>

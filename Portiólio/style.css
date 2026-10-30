@@ -1,6 +1,6 @@
 :root {
   --vinho: #4a3f4b;
-  --vermelho: #16131F;
+  --vermelho: #604d53;
   --rosa: #ffd2dc;
   --mountain: #f0d9e4;
   --texto: #806C79;
@@ -28,7 +28,7 @@ body {
 
 body.escuro {
   --creme: #20171b;
-  --texto: #fff0f2;
+  --texto: #b59275;
   --rosa: #38232b;
 }
 
@@ -96,16 +96,6 @@ nav a:hover {
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
 .inicio {
   min-height: 520px;
   padding: 80px 10%;
@@ -172,6 +162,11 @@ h2 {
   font-weight: bold;
 }
 
+.eu{
+  height: 280px;
+  width: 280px;
+}
+
 .avatar {
   width: min(100%, 300px);
   height: 300px;
@@ -235,7 +230,6 @@ body.escuro .habilidades {
 
 .cartao2 {
   padding: 22px;
-  background: var(--amarelo);
   border: 1px solid #7d153020;
   border-radius: 12px;
   transition: transform 0.2s;
